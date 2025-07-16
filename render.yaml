@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ride-share-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://sushanthmallari3dmoviehi:cRCEiF65wgeAe7a8@cluster0.koaspbi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - key: JWT_SECRET
+        value: your_jwt_secret_here
